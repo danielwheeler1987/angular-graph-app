@@ -1,0 +1,32 @@
+{
+  "name": "angular-graph-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start-server": "./bin/start-server",
+    "all-test": "./bin/all-test",
+    "build-css": "./bin/build-css",
+    "watch-css": "./bin/watch-css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielwheeler1987/angular-graph-app.git"
+  },
+  "author": "Daniel Wheeler",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danielwheeler1987/angular-graph-app/issues"
+  },
+  "homepage": "https://github.com/danielwheeler1987/angular-graph-app#readme",
+  "dependencies": {
+    "angular": "^1.5.6",
+    "angularjs-slider": "^4.0.2",
+    "d3": "^3.5.17",
+    "nvd3": "^1.8.3"
+  },
+  "devDependencies": {
+    "node-sass": "^3.7.0",
+    "nodemon": "^1.9.2"
+  }
+}
