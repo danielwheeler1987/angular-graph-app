@@ -3,7 +3,7 @@
 
   var app = angular.module('oilPricesService', []);
 
-  app.factory('oilPricesService', function($http){
+  app.factory('oilPricesService', ['$http', '$q', function($http, $q){
     return {
       get: function() {
         return $http({
@@ -13,6 +13,6 @@
         });
       }
     };
-  });
+  }]);
 
 })(window.angular);
