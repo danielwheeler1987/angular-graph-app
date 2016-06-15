@@ -2,8 +2,9 @@
   'use strict';
 
   var app = angular.module('oilPricesApp', [
+    'oilPricesController'
     'oilPricesService',
-    'oilPricesGraph',
+    'oilPricesBarGraph',
     'oilPricesFilters',
     'rzModule'
   ]);

@@ -9,12 +9,12 @@
 </head>
 <body>
 
-  <div class="Page" ng-app="oilPricesApp">
-    <div class="Page-primary">
-      <oil-prices-graph></oil-prices-graph>
-    </div>
+  <div class="Page" ng-app="oilPricesApp" ng-controller="oilPricesController">
     <div class="Page-secondary">
-       <rzslider rz-slider-model="priceSlider"></rzslider>
+      <oil-prices-filters></oil-prices-filters>
+    </div>
+    <div class="Page-primary">
+      <oil-prices-bar-graph></oil-prices-bar-graph>
     </div>
   </div>
 
@@ -24,8 +24,9 @@
   <script src="../node_modules/angularjs-slider/dist/rzslider.js"></script>
 
   <script src="javascripts/main.js"></script>
+  <script src="javascripts/controllers/oil_prices_controller.js"></script>
   <script src="javascripts/services/oil_prices_service.js"></script>
-  <script src="javascripts/directives/oil_prices_graph.js"></script>
+  <script src="javascripts/directives/oil_prices_bar_graph.js"></script>
   <script src="javascripts/directives/oil_prices_filters.js"></script>
 </body>
 </html>

@@ -1,0 +1,37 @@
+.Filters {
+  @include padding(1.5rem);
+}
+
+// Going to theme the rz-slider :(
+.rzslider {
+  $primary-color: #8e44ad;
+  $secondary-color: #2ecc71;
+
+  .rz-pointer {
+    &.rz-active {
+      &:after {
+        background: $secondary-color;
+      }
+    }
+    background: $primary-color;
+  }
+
+  .rz-bar {
+    &.rz-selection {
+      background: $primary-color;
+    }
+  }
+
+  .rz-ticks {
+    .rz-tick {
+      &.rz-selected {
+        background: $primary-color;
+      }
+      .rz-tick-value {
+        color: #999;
+        font-weight: 700;
+        top: -38px;
+      }
+    }
+  }
+}
