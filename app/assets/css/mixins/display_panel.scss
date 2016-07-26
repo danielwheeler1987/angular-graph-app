@@ -1,0 +1,10 @@
+@mixin displayPanel {
+  $background-color: #fff;
+  $border-color: #ddd;
+  @include border-color($border-color);
+  @include border-style(solid);
+  @include border-width(1px);
+  @include padding(1.25rem);
+  background-color: $background-color;
+  @content;
+}

@@ -1,1 +1,1 @@
-node-sass --include-path scss scss/main.scss app/stylesheets/main.css
+node-sass app/assets/css/main.scss app/assets/css/main.css

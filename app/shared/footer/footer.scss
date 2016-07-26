@@ -1,0 +1,16 @@
+.Footer {
+  $border-color: #ddd;
+  $font-color: #999;
+
+  @include border-color($border-color null null null);
+  @include border-style(solid null null null);
+  @include border-width(1px null null null);
+  @include padding(1rem null 1rem null);
+  text-align: center;
+
+  &-content {
+    color: $font-color;
+    font-size: 14px;
+    line-height: 150%;
+  }
+}

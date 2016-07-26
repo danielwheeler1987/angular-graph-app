@@ -7,14 +7,15 @@
     "start-server": "./bin/start-server",
     "all-test": "./bin/all-test",
     "build-css": "./bin/build-css",
-    "watch-css": "./bin/watch-css"
+    "watch-css": "./bin/watch-css",
+    "build-production": "./bin/build-production"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/danielwheeler1987/angular-graph-app.git"
   },
   "author": "Daniel Wheeler",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/danielwheeler1987/angular-graph-app/issues"
   },
@@ -23,6 +24,7 @@
     "angular": "^1.5.6",
     "angularjs-slider": "^4.0.2",
     "d3": "^3.5.17",
+    "ngcomponentrouter": "^2.1.0",
     "nvd3": "^1.8.3"
   },
   "devDependencies": {

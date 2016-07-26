@@ -1,0 +1,51 @@
+@import 'vendor/bourbon/bourbon';
+@import 'vendor/base/base';
+@import 'vendor/neat/neat';
+@import 'mixins/display_panel';
+@import 'components/content';
+
+@import 'app/shared/content/content';
+@import 'app/shared/navigation/navigation';
+@import 'app/shared/footer/footer';
+
+@import 'app/components/chart/chart';
+@import 'app/components/filter/filter';
+
+body {
+  $background-color: #ecf0f1;
+  @include margin(0);
+  @include padding(0);
+  background: $background-color;
+}
+
+/* D3 styles below */
+
+path {
+  stroke: #3498db;
+  stroke-width: 1;
+  fill: none;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #ddd;
+  stroke-width: 1;
+}
+
+.axis text {
+  font-size: 13px;
+  font-color: #ddd;
+}
+
+div.tooltip {
+  position: absolute;
+  text-align: center;
+  width: 60px;
+  height: 28px;
+  padding: 2px;
+  font: 12px sans-serif;
+  background: lightsteelblue;
+  border: 0px;
+  border-radius: 8px;
+}

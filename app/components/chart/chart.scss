@@ -1,0 +1,13 @@
+.Chart {
+  @include outer-container;
+
+  &-filters {
+    @include displayPanel {
+      @include margin(null null 1rem null);
+    }
+  }
+
+  &-display {
+    @include displayPanel;
+  }
+}

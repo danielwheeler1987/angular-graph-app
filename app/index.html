@@ -3,30 +3,36 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Oil Prices App.</title>
+  <title>My Angular Application</title>
   <link rel="stylesheet" href="../node_modules/angularjs-slider/dist/rzslider.css">
-  <link rel="stylesheet" href="stylesheets/main.css">
-</head>
-<body>
+  <link rel="stylesheet" href="assets/css/main.css">
 
-  <div class="Page" ng-app="oilPricesApp" ng-controller="oilPricesController">
-    <div class="Page-secondary">
-      <oil-prices-filters></oil-prices-filters>
-    </div>
-    <div class="Page-primary">
-      <oil-prices-bar-graph></oil-prices-bar-graph>
-    </div>
-  </div>
+</head>
+<body ng-app="app">
+
+  <app></app>
+
+  <script type="text/javascript">
+    // Need to figure out a better way to do this...
+    document.write('<base href="' + document.location + '" />');
+  </script>
 
   <script src="../node_modules/angular/angular.js"></script>
-  <script src="../node_modules/d3/d3.js"></script>
-  <script src="../node_modules/nvd3/build/nv.d3.js"></script>
   <script src="../node_modules/angularjs-slider/dist/rzslider.js"></script>
+  <script src="../node_modules/ngcomponentrouter/angular_1_router.js"></script>
 
-  <script src="javascripts/main.js"></script>
-  <script src="javascripts/controllers/oil_prices_controller.js"></script>
-  <script src="javascripts/services/oil_prices_service.js"></script>
-  <script src="javascripts/directives/oil_prices_bar_graph.js"></script>
-  <script src="javascripts/directives/oil_prices_filters.js"></script>
+  <script src="app.module.js"></script>
+  <script src="app.routes.js"></script>
+
+  <script src="services/oilPricesService.js"></script>
+  <script src="services/d3Service.js"></script>
+
+  <script src="shared/content/contentDirective.js"></script>
+  <script src="shared/navigation/navigationDirective.js"></script>
+  <script src="shared/footer/footerDirective.js"></script>
+
+  <script src="components/chart/chartDirective.js"></script>
+  <script src="components/filter/filterDirective.js"></script>
+
 </body>
 </html>

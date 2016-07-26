@@ -1,0 +1,45 @@
+// Theme the default rszlider styles
+
+.Filters {
+  .rzslider {
+    $tick-color: #999;
+    $primary-color: #8e44ad;
+    $secondary-color: #2ecc71;
+
+    .rz-pointer {
+      top: -10px;
+      height: 24px;
+      width: 24px;
+      &:after {
+        top: 8px;
+        left: 8px;
+      }
+      &.rz-active {
+        &:after {
+          background: $secondary-color;
+        }
+      }
+      background: $primary-color;
+    }
+
+    .rz-bar {
+      &.rz-selection {
+        background: $primary-color;
+      }
+    }
+
+    .rz-ticks {
+      .rz-tick {
+        &.rz-selected {
+          background: $primary-color;
+        }
+        .rz-tick-value {
+          color: $tick-color;
+          font-size: 14px;
+          font-weight: 700;
+          top: -38px;
+        }
+      }
+    }
+  }
+}
